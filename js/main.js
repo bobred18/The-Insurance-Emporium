@@ -1,4 +1,4 @@
-import './style.css';
+import '../css/style.css';
 
 /* URL to reach with endpoints */
 const URL = 'https://www.theinsuranceemporium.co.uk/blog/';
