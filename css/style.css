@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  /* Color Variables */
+  --clr-white: #fff;
+  --clr-black: #202020;
+  --clr-mid: #f8f8f8;
+  --clr-accent: #00abc7;
+
+  /* Blog Post Variables */
+  --blog-padding: 12px;
+}
+
+html {
+  background-color: var(--clr-mid);
+}
+
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  color: var(--clr-black);
+  padding: 50px;
+}
+
+.blog-post{
+  border-radius: 0px;
+  width: 100%;
+  max-width: 700px;
+  display: grid;
+  background-color: #fff;
+}
+
+.up {
+  box-shadow: 0 2px 2px 0px #0002;
+}
+
+a, .title {
+  color: var(--clr-accent);
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.title {
+  font-weight: 300;
+  font-size: 1.65rem;
+  margin: 0;
+  padding: var(--blog-padding);
+  padding-bottom: 0;
+}
+
+.text {
+  overflow: hidden;
+  margin: 0;
+  padding: var(--blog-padding);
+  padding-bottom: 4px;
+}
+
+.text:last-child {
+  overflow: visible;
+}
+
+.sub {
+  font-size: 0.9rem;
+  padding: 0 var(--blog-padding);
+  padding-bottom: 4px;
+}
+
+.tags {
+  padding: 4px var(--blog-padding);
+}
+
+/* Image - Section Start */
+.img-holder {
+  float: left;
+  padding: var(--blog-padding);
+  padding-bottom: 0;
+}
+
+img {
+  max-width: 140px;
+  border-radius: 8px;
+}
+
+/* Makes Image Responsive */
+@media (max-width: 500px) {
+  img {
+    max-width: 25vw ;
+  }
+}
+/* Image - Section End */
+
+
+
+@media (max-width: 780px){
+  #app {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 1.45rem;
+  }
+}
